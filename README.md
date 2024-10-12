@@ -12,7 +12,7 @@ git clone https://github.com/NazaryiMontytskyi/JavaDevelopLab1
 ```
 Congratulations! You're so close to run this project. Keep staying in the directory. Execute following command to go to folder with main class. This're gonna allow us to run the program.
 ```
-cd JavaDevelopLab1\Lab1\src\
+cd JavaDevelopLab1/src/
 ```
 Well done! You need to do not so much to finish running the program! First, you need to compile the Java project on your local device. Run following:
 ```

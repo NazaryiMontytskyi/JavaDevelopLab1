@@ -1,5 +1,9 @@
 package Exceptions;
 
+/*
+ * Ексепшен, який надається у випадку якщо
+ * користувач передав не той тип даних
+ */
 public class NonFitableDatatype extends Exception{
 
     public NonFitableDatatype()

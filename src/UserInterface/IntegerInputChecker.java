@@ -1,5 +1,8 @@
 package UserInterface;
 
+/*
+ * Клас, що реалізує інтерфейс перевірки користувацького вводу
+ */
 public class IntegerInputChecker implements IInputCheckable{
     
     @Override
