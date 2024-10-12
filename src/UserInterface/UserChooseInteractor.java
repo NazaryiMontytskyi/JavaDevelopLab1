@@ -4,8 +4,16 @@ import java.util.Scanner;
 
 import Exceptions.FalseInputOfAnswer;
 
+
+/*
+ * Клас, що взаємодіє з користувачем та реалізує відповідний інтерфейс
+ */
 public class UserChooseInteractor implements IUserInteractable{
 
+    /*
+     * Реалізація методу з отриманням повідомлення та поверненням
+     * відгуку від користувача
+     */
     @Override
     public String userInteraction(final String message)
     {
@@ -14,6 +22,10 @@ public class UserChooseInteractor implements IUserInteractable{
         return scanner.nextLine();
     }
 
+    /*
+     * Реалізація методу з отриманням позитивної або
+     * негативної відповіді від користувача
+     */
     @Override
     public boolean getRequest(final String message)
     {

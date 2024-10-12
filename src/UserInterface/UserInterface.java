@@ -5,6 +5,12 @@ import MatrixManager.MatrixManager;
 import Matrixes.Matrix;
 import NumbersDefine.NumbersDefiner;
 
+/*
+ * Клас, що відповідає за взаємодію з користувачем
+ * та виводом у консоль всієї інформації
+ * 
+ * Реалізує інтерфейс та виконавчий метод
+ */
 public class UserInterface implements IUserExecutable{
     
     IInputCheckable checker;

@@ -3,8 +3,15 @@ package MatrixManager;
 import java.util.*;
 import Matrixes.*;
 
+/*
+ * Клас, що оперує матрицями та реалізовує відразу декілька інтерфейсів, що
+ * відповідають за роботу з матрицями
+ */
 public class MatrixManager<T extends Number & Comparable<T>> implements ITwoDimesionsManagable<T>, ISummarizable<Float> {
     
+    /*
+     * Реалізований метод інтерфейсу, що шукає найбільший елемент у масиві
+     */
     @Override
     public T getRowMaxAttribute(final T[] row)
     {
@@ -20,6 +27,10 @@ public class MatrixManager<T extends Number & Comparable<T>> implements ITwoDime
         return result;
     }
 
+    /*
+     * Метод що повертає колонку у вигляді масиву. Передається матриця та номер колонки,
+     * а повертається сама колонка.
+     */
     @Override
     public T[] getColumn(T[][] matrix, int index)
     {
@@ -43,6 +54,9 @@ public class MatrixManager<T extends Number & Comparable<T>> implements ITwoDime
         return resultList.toArray((T[]) java.lang.reflect.Array.newInstance(matrix[0][0].getClass(), resultList.size()));
     }
 
+    /*
+     * Отримується сума масиву для типу даних Float
+     */
     @Override
     public Float getSum(final Float[] sumArray)
     {
@@ -56,6 +70,9 @@ public class MatrixManager<T extends Number & Comparable<T>> implements ITwoDime
         return sum;
     }
 
+    /*
+     * У цьому методі отримується масив максимальних значень у колонках
+     */
     public T[] getMaxVector(final T[][] matrix)
     {
         if(matrix == null || matrix.length == 0)
@@ -75,6 +92,10 @@ public class MatrixManager<T extends Number & Comparable<T>> implements ITwoDime
     }
 
 
+    /*
+     * Побітове виключне АБО для двох матриць. У результаті отримується
+     * нова цілочисельна матриця
+     */
     public Matrix<Integer> bitOr(Matrix<Float> first, Matrix<Float> second)
     {
         if(first == null || second == null)

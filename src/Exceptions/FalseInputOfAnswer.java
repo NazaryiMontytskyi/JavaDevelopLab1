@@ -1,5 +1,9 @@
 package Exceptions;
 
+/*
+ * Ексепшен, який спрацьовує у випадку некоректного вводу
+ * даних
+ */
 public class FalseInputOfAnswer extends Exception {
     
     public FalseInputOfAnswer()
